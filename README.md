@@ -9,6 +9,15 @@ An end-to-end data engineering pipeline that scrapes, processes, and enriches jo
 
 🔗 **Live Demo:** [Data Jobs Pulse Dashboard](https://jobmarket-data-pipeline-bart.streamlit.app/)
 
+<img width="1190" height="969" alt="image" src="https://github.com/user-attachments/assets/b088be78-39af-46ae-bb59-c16382c7ddd5" />
+
+
+---
+
+## 🎯 Business Problem & Objective
+
+The job market for data professionals is highly fragmented, with constantly shifting skill requirements and inconsistent naming conventions across companies. Relying on generic, static industry reports makes it difficult to understand real-time market demands and accurately evaluate compensation standards. The primary goal of this project was to tackle this information gap by building an automated, self-updating data system that extracts, standardizes, and analyzes live job postings to provide actionable, data-driven insights into the tech landscape.
+
 ---
 
 ## 🚀 Project Overview
@@ -20,6 +29,11 @@ This project demonstrates a complete modern data stack workflow. It automates th
 * **LLM Enrichment:** Using Large Language Models to unify inconsistent job titles and extract specific tech stacks from descriptions.
 * **Modern Analytics:** High-performance OLAP processing using DuckDB and modular modeling with dbt.
 * **Interactive UI:** A sleek Streamlit dashboard for real-time data exploration.
+
+### 💡 Key Insights Generated:
+* **Skill Demand Quantification:** Directly maps which programming languages and tools (Python, dbt, SQL...) are currently driving the most demand across various data roles.
+* **Salary Transparency:** Uncovers compensation bounds across different seniority levels and work models (remote vs. hybrid/office), providing clear benchmarks for salary evaluation.
+* **Title Normalization:** Successfully maps wildly different job position names into standardized industry roles, allowing for accurate market trend analysis.
 
 ---
 
