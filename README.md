@@ -9,6 +9,9 @@ An end-to-end data engineering pipeline that scrapes, processes, and enriches jo
 
 🔗 **Live Demo:** [Data Jobs Pulse Dashboard](https://jobmarket-data-pipeline-bart.streamlit.app/)
 
+<img width="1190" height="969" alt="image" src="https://github.com/user-attachments/assets/b088be78-39af-46ae-bb59-c16382c7ddd5" />
+
+
 ---
 
 ## 🚀 Project Overview
