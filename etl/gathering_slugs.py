@@ -110,7 +110,7 @@ except Exception as e:
     print(f"Error: {e}")
 
 res = con.execute("SELECT * FROM SLUGS ORDER BY ID LIMIT 5").df()
-display(res)
+display(res) 
 
 con.close()
 
