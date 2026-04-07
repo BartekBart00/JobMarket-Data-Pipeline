@@ -299,7 +299,7 @@ selected_wpt = [WP_TYPE_REVERSE.get(v, v) for v in selected_wpt_display]
 st.sidebar.markdown("""
     <div class="filter-section">
         <div class="icon">$</div>
-        <div class="label">Salary Range (PLN)</div>
+        <div class="label">Gross Salary Range (PLN)</div>
     </div>
 """, unsafe_allow_html=True)
 selected_salary = st.sidebar.slider(
