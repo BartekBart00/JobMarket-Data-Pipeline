@@ -55,7 +55,7 @@ This project demonstrates a complete modern data stack workflow. It automates th
 2.  **Data Cleaning:** Handling missing values, deduplication, and schema enforcement in Python.
 3.  **LLM Enrichment:** * Unifying diverse job titles into standard categories.
     * Extracting hidden requirements (e.g., specific libraries or soft skills).
-4.  **Data Modeling (dbt):** * Building a clean star schema.
+4.  **Data Modeling (dbt):** * Dimensional Modeling (Galaxy Schema).
     * Running data quality tests.
 5.  **Analytics Layer:** Final presentation via Streamlit, hosted on the Cloud.
 
