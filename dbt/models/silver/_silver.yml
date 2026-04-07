@@ -1,0 +1,39 @@
+version: 2
+
+models:
+  - name: stg_offers
+    description: >
+      One row per offer: core dimensions plus unified title from bronze.raw_offer_unified_title
+    columns:
+      - name: id
+        description: "Offer id (bronze.raw_offers.id)"
+        tests:
+          - not_null
+          - unique
+      - name: title
+        description: "Unified job title from LLM taxonomy"
+      - name: experience_level
+        description: "Original experienceLevel from API"
+      - name: company_name
+        description: "companyName"
+      - name: city
+      - name: country_code
+      - name: company_size
+      - name: workplace_type
+      - name: working_time
+
+  - name: stg_offer_required_skills
+    description: "One row per required skill (bronze.raw_offers.requiredSkills struct array)"
+    columns:
+      - name: offer_id
+        tests:
+          - not_null
+      - name: skill_name
+      - name: skill_level
+
+  - name: stg_offer_employment_types
+    description: "One row per employment / compensation band (bronze.raw_offers.employmentTypes struct array)"
+    columns:
+      - name: offer_id
+        tests:
+          - not_null

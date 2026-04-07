@@ -1,0 +1,62 @@
+version: 2
+
+models:
+  - name: dim_companies
+    description: "Company Dimension"
+    columns:
+      - name: company_key
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_offers
+    description: "Offer Dimension"
+    columns:
+      - name: offer_key
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_skills
+    description: "Skill Dimension"
+    columns:
+      - name: skill_key
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_offer_salaries
+    description: "Offer Salaries Fact Table"
+    columns:
+      - name: offer_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_offers')
+              field: offer_key
+      - name: company_key
+        tests:
+          - relationships:
+              to: ref('dim_companies')
+              field: company_key
+
+  - name: fct_offer_skills
+    description: "Offer Skills Fact Table"
+    columns:
+      - name: offer_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_offers')
+              field: offer_key
+      - name: skill_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_skills')
+              field: skill_key
+      - name: company_key
+        tests:
+          - relationships:
+              to: ref('dim_companies')
+              field: company_key

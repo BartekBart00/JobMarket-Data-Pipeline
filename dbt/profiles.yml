@@ -1,0 +1,7 @@
+data_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "/data_analytics/data/data_job_market.db"
+      threads: 4

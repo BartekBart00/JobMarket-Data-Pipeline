@@ -1,0 +1,33 @@
+# System files
+**/.DS_Store
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments + files
+.venv
+offers/
+slugs_queue.json
+.ipynb_checkpoints/
+.env
+**/dbt/logs/
+anaconda_projects/
+logs/
+other/
+ipynb/
+ui
+**/dbt/target/
+**/dbt/.user.yml
+old_db/
+old_etl/
+
+
+
+
+
+
